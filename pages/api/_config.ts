@@ -183,11 +183,11 @@ export const local_cache_secret = process.env.local_cache_secret || "";
 
 //======================黑白名单设置============================
 //黑名单模式 1-开 0-关
-export const blacklist_enabled: io = 1;
+export const blacklist_enabled: io = 0;
 //白名单模式 1-开 0-关
 export const whitelist_enabled: io = 0;
 //验证vip与视频要求 1-开 0-关
-export const check_vip_enabled: io = 1;
+export const check_vip_enabled: io = 0;
 //禁忌设置-白名单调用vip access_key 1-开 0-关
 export const whitelist_vip_enabled: io = 0;
 //============================================================
@@ -201,12 +201,12 @@ export const public_blacklist: string = "https://black.qimo.ink/api/users/";
 
 //=====================限制API调用=============================
 //要求登录 1-开 0-关
-export const need_login: io = 1;
+export const need_login: io = 0;
 //允许WEB版使用 1-开 0-关
 export const web_on: io = 1;
 //限制哔哩漫游最低版本(需设置 web_on = 0) 填写数字 0-不限制
 //1084为1.6.8的版本号
-export const ver_min: number = 1084;
+export const ver_min: number = 0;
 //锁区，填写的是支持的地区 cn-中国大陆 hk-中国香港 tw-中国台湾 th-泰国/新加坡/东南亚地区
 //TODO 暂时未加地区检测，访问不支持地区由B站服务器提示错误。
 export const block_region: _block_region = ["hk"];
